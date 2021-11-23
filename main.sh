@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # Colors
 WHT=$(tput setaf 7);
 RED=$(tput setaf 1);
