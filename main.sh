@@ -11,7 +11,7 @@ normal=$(tput sgr0);
 
 
 # Get current temperature
-FTemp=$(vcgencmd measure_temp |tr -cd '[[:digit:]].');
+FTemp=$(vcgencmd measure_temp | tr -cd '[[:digit:]].');
 
 # Display temperature in respective units
 echo "${bold}Temperature:${normal}";
