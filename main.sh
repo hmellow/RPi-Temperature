@@ -9,7 +9,7 @@ normal=$(tput sgr0);
 
 
 # Get current temperature
-FTemp=$(vcgencmd measure_temp |tr -cd '[[:digit:]].');
+FTemp=$(vcgencmd measure_temp | tr -cd '[[:digit:]].');
 
 # Display temperature in respective units
 echo "${bold}Temperature:${normal}";
@@ -22,7 +22,7 @@ echo "Fahrenheit: $(echo "1.8*${FTemp}+32" | bc)";
 stmsg="${und}Status:${normal}";
 if [ ${FTemp:0:1} -gt 58 ];
 then
-  echo "${stmsg} ${RED}Too hot!"
+  echo "${stmsg} ${RED}Too hot!";
 else
-  echo "${stmsg} ${GRN}Safe"
+  echo "${stmsg} ${GRN}Safe";
 fi;
