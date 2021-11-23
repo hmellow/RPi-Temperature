@@ -1,8 +1,6 @@
-# No color
-NC='\033[0m';
 # Colors
-RED='\033[0;31m';
-GRN='\033[0;32m';
+RED=$(tput setaf 1);
+GRN=$(tput setaf 2);
 
 # Font styles: bold, underlined, normal
 bold=$(tput bold);
