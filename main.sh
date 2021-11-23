@@ -1,4 +1,5 @@
 # Colors
+WHT=$(tput setaf 7);
 RED=$(tput setaf 1);
 GRN=$(tput setaf 2);
 
