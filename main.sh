@@ -1,8 +1,7 @@
-# No color
-NC='\033[0m';
 # Colors
-RED='\033[0;31m';
-GRN='\033[0;32m';
+WHT=$(tput setaf 15);
+RED=$(tput setaf 1);
+GRN=$(tput setaf 2);
 
 # Font styles: bold, underlined, normal
 bold=$(tput bold);
@@ -24,7 +23,7 @@ echo "Fahrenheit: $(echo "1.8*${FTemp}+32" | bc)";
 stmsg="${und}Status:${normal}";
 if [ ${FTemp:0:1} -gt 58 ];
 then
-  echo "${stmsg} ${RED}Too hot!"
+  echo "${stmsg} ${RED}Too hot!";
 else
-  echo "${stmsg} ${GRN}Safe"
+  echo "${stmsg} ${GRN}Safe";
 fi;
